@@ -1,0 +1,168 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Chat container styles */
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #5491ee;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.chat-messages {
+    padding: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.assistant-message {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+
+.chat-input {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    background-color: #5491ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Admin panel styles */
+.admin-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.admin-container h2 {
+    margin-top: 0;
+}
+
+.admin-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.admin-container input[type="text"],
+.admin-container textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.admin-container textarea {
+    resize: vertical;
+}
+
+.admin-container button {
+    background-color: #5491ee;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-container th,
+.admin-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.admin-container th {
+    background-color: #f0f0f0;
+}
+
+#typing-indicator {
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}
+
+.suggested-questions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+.question-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: normal;
+    /* Cho phép xuống dòng */
+    word-wrap: break-word;
+    /* Đảm bảo từ không bị cắt ngang */
+    flex: 1 0 calc(33% - 10px);
+    /* Chia đều không gian cho các nút */
+    max-width: calc(100% - 10px);
+}
+
+.question-button:hover {
+    background-color: #367c39;
+}
